@@ -7,9 +7,9 @@
 
 const SITE_CONFIG = {
     brand: "PRIME WEB AGENCY",
-    whatsapp: "6307803618",
+    whatsapp: "+916307803618",
     email: "riteshprajapati77399@gmail.com",
-    phone: "8572948718",
+    phone: "+918572948718",
     location: "YOUR_LOCATION",
     instagram: "YOUR_INSTAGRAM_URL",
     facebook: "YOUR_FACEBOOK_URL",
