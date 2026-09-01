@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reviews | PRIME WEB AGENCY</title>
+    <meta name="description" content="Read PRIME WEB AGENCY demonstration testimonials and submit a frontend demo review using the local review system.">
+    <meta name="keywords" content="web developer reviews, website developer testimonials, PRIME WEB AGENCY reviews">
+    <meta name="author" content="PRIME WEB AGENCY">
+
+    <meta property="og:title" content="PRIME WEB AGENCY Reviews">
+    <meta property="og:description" content="Demonstration reviews and frontend review submission system.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.gstatic.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%235b5ff7'/%3E%3Cpath d='M18 21h28L32 43 18 21Z' fill='white'/%3E%3Ccircle cx='32' cy='30' r='5' fill='%2300c8ff'/%3E%3C/svg%3E">
+</head>
+
+<body data-page="reviews">
+
+<div id="scrollProgress"></div>
+
+<header class="site-header">
+    <nav class="navbar container">
+        <a href="index.html" class="brand" aria-label="PRIME WEB AGENCY Home">
+    <img src="assets/logo/WhatsApp Image 2026-09-01 at 10.34.51.jpeg"
+         alt="Prime Web Agency Logo">
+</a>
+
+        <div class="desktop-nav">
+            <a href="index.html" data-nav="home">Home</a>
+            <a href="about.html" data-nav="about">About</a>
+            <a href="services.html" data-nav="services">Services</a>
+            <a href="maintenance.html" data-nav="maintenance">Maintenance</a>
+            <a href="portfolio.html" data-nav="portfolio">Portfolio</a>
+            <a href="reviews.html" data-nav="reviews">Reviews</a>
+            <a href="contact.html" data-nav="contact">Contact</a>
+            <a href="contact.html" class="nav-cta">Start Project <span>↗</span></a>
+        </div>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+        <div class="mobile-menu-top">
+            <a href="index.html" class="brand" aria-label="PRIME WEB AGENCY Home">
+    <img src="assets/logo/WhatsApp Image 2026-09-01 at 10.34.51.jpeg"
+         alt="Prime Web Agency Logo">
+</a>
+            <button class="mobile-close" id="mobileClose" aria-label="Close navigation">×</button>
+        </div>
+
+        <div class="mobile-links">
+            <a href="index.html">Home <span>↗</span></a>
+            <a href="about.html">About <span>↗</span></a>
+            <a href="services.html">Services <span>↗</span></a>
+            <a href="maintenance.html">Maintenance <span>↗</span></a>
+            <a href="portfolio.html">Portfolio <span>↗</span></a>
+            <a href="reviews.html">Reviews <span>↗</span></a>
+            <a href="contact.html">Contact <span>↗</span></a>
+        </div>
+
+        <a href="contact.html" class="btn btn-primary mobile-project-btn">Start Your Project ↗</a>
+    </div>
+</div>
+
+<main>
+
+<section class="page-hero compact">
+    <div class="hero-grid"></div>
+
+    <div class="container page-hero-content reveal">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> Client Feedback</span>
+        <h1>Feedback builds <span class="gradient-text">trust.</span></h1>
+        <p>
+            Explore the review system and demonstration testimonials.
+            Replace demo content with genuine customer feedback before publishing.
+        </p>
+    </div>
+</section>
+
+<section class="section review-summary-section">
+    <div class="container">
+
+        <div class="review-summary">
+
+            <div class="rating-main reveal">
+                <strong id="averageRating">0.0</strong>
+                <div class="stars-large" id="averageStars" aria-label="Average rating"></div>
+                <span><strong id="totalReviews">0</strong> approved reviews</span>
+            </div>
+
+            <div class="rating-bars reveal delay-1">
+                <div class="rating-row"><span>5</span><div><i data-rating-bar="5"></i></div><strong id="rating5">0</strong></div>
+                <div class="rating-row"><span>4</span><div><i data-rating-bar="4"></i></div><strong id="rating4">0</strong></div>
+                <div class="rating-row"><span>3</span><div><i data-rating-bar="3"></i></div><strong id="rating3">0</strong></div>
+                <div class="rating-row"><span>2</span><div><i data-rating-bar="2"></i></div><strong id="rating2">0</strong></div>
+                <div class="rating-row"><span>1</span><div><i data-rating-bar="1"></i></div><strong id="rating1">0</strong></div>
+            </div>
+
+            <button class="btn btn-primary reveal delay-2" id="openReviewForm">Write a Review ↗</button>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="section light-section">
+    <div class="container">
+
+        <div class="reviews-toolbar reveal">
+            <div>
+                <span class="section-label">REVIEWS</span>
+                <h2>What people think.</h2>
+            </div>
+
+            <div class="review-controls">
+                <label>
+                    Rating
+                    <select id="ratingFilter">
+                        <option value="all">All ratings</option>
+                        <option value="5">5 stars</option>
+                        <option value="4">4 stars</option>
+                        <option value="3">3 stars</option>
+                        <option value="2">2 stars</option>
+                        <option value="1">1 star</option>
+                    </select>
+                </label>
+
+                <label>
+                    Sort
+                    <select id="reviewSort">
+                        <option value="newest">Newest</option>
+                        <option value="highest">Highest rating</option>
+                        <option value="lowest">Lowest rating</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+        <div class="reviews-grid" id="reviewsGrid"></div>
+
+        <div class="center-action">
+            <button class="btn btn-secondary" id="loadMoreReviews">Load More Reviews</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <div class="container demo-notice reveal">
+        <div class="notice-icon">!</div>
+        <div>
+            <strong>Frontend Demo Review System</strong>
+            <p>
+                Reviews submitted on this static website are saved in your browser's
+                localStorage and start with <strong>pending</strong> status.
+                Only <strong>approved</strong> reviews are displayed publicly.
+                This is not a cloud database or production moderation system.
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="modal-overlay" id="reviewModal" aria-hidden="true">
+    <div class="review-modal" role="dialog" aria-modal="true" aria-labelledby="reviewModalTitle">
+
+        <button class="modal-close" id="reviewModalClose" aria-label="Close review form">×</button>
+
+        <span class="section-label">YOUR FEEDBACK</span>
+        <h2 id="reviewModalTitle">Write a Review</h2>
+        <p class="modal-note">Your review will be stored locally as a pending demo review.</p>
+
+        <form id="reviewForm" novalidate>
+
+            <div class="form-grid two">
+                <div class="form-group">
+                    <label for="reviewName">Name *</label>
+                    <input id="reviewName" name="name" type="text" maxlength="80" required>
+                    <small class="field-error" data-error-for="reviewName"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="reviewBusiness">Business Name</label>
+                    <input id="reviewBusiness" name="business" type="text" maxlength="100">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="reviewEmail">Email *</label>
+                <input id="reviewEmail" name="email" type="email" maxlength="150" required>
+                <small class="field-error" data-error-for="reviewEmail"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Rating *</label>
+                <div class="rating-input" id="ratingInput" role="radiogroup" aria-label="Choose rating">
+                    <button type="button" data-star="1" aria-label="1 star">★</button>
+                    <button type="button" data-star="2" aria-label="2 stars">★</button>
+                    <button type="button" data-star="3" aria-label="3 stars">★</button>
+                    <button type="button" data-star="4" aria-label="4 stars">★</button>
+                    <button type="button" data-star="5" aria-label="5 stars">★</button>
+                </div>
+                <input type="hidden" id="reviewRating" name="rating" value="">
+                <small class="field-error" data-error-for="reviewRating"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="reviewText">Review *</label>
+                <textarea id="reviewText" name="review" rows="5" maxlength="700" required></textarea>
+                <small class="field-error" data-error-for="reviewText"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="reviewAvatar">Profile Image URL <span>(optional)</span></label>
+                <input id="reviewAvatar" name="avatar" type="url" placeholder="https://example.com/photo.jpg">
+            </div>
+
+            <button type="submit" class="btn btn-primary full-btn">Submit Review ↗</button>
+
+        </form>
+    </div>
+</div>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-brand">
+           <a href="index.html" class="brand" aria-label="PRIME WEB AGENCY Home">
+    <img src="assets/logo/WhatsApp Image 2026-09-01 at 10.34.51.jpeg"
+         alt="Prime Web Agency Logo">
+</a>
+            <p>Premium websites for businesses that want to look professional, build trust and grow online.</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="reviews.html">Reviews</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Services</h3>
+            <a href="services.html?service=Business%20Website">Business Website</a>
+            <a href="services.html?service=Landing%20Page">Landing Page</a>
+            <a href="services.html?service=Website%20Redesign">Redesign</a>
+            <a href="maintenance.html">Maintenance</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <a data-config="email" href="mailto:YOUR_EMAIL">YOUR_EMAIL</a>
+            <a data-config="phone" href="tel:YOUR_PHONE">YOUR_PHONE</a>
+            <span data-config="location">YOUR_LOCATION</span>
+            <a href="contact.html">Start a Project →</a>
+        </div>
+    </div>
+
+    <div class="container footer-bottom">
+        <span>© 2026 PRIME WEB AGENCY. All Rights Reserved.</span>
+        <div class="footer-socials">
+            <a data-social="instagram" href="#" target="_blank" rel="noopener">IG</a>
+            <a data-social="facebook" href="#" target="_blank" rel="noopener">FB</a>
+            <a data-social="linkedin" href="#" target="_blank" rel="noopener">IN</a>
+        </div>
+    </div>
+</footer>
+
+<button id="scrollTop" class="scroll-top" aria-label="Scroll to top">↑</button>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
